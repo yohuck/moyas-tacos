@@ -57,9 +57,10 @@ body {
 
 .hero {
     display: flex;
-    width: 80%;
+    width: 90%;
+    /* height:  50%; */
     margin: 0 auto;
-    height: 100%;
+    /* height: 100%; */
     justify-content: center;
     align-items: center;
 }
@@ -77,10 +78,13 @@ img {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    margin: 1rem;
+    /* border: 5px solid  var(--road-rage); */
 }
 
 .headline h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -88,4 +92,36 @@ img {
     width: 70%;
     font-family: var(--curtive-mono);
     font-size: 1rem;
+    margin: 1rem;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+.btn h5{
+    background-color: var(--goldenrod);
+    padding: 0.8rem;
+    border-radius: 999px;
+    color: var(--smokey-black);
+    font-family: var(--fat-font);
+}
+
+.btn h5:hover {
+    background-color: var(--burnt-red);
+    color: var(--goldenrod);
+}
+
+.hero, .container {
+    max-width: 600px;
 }
