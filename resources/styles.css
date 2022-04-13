@@ -7,6 +7,7 @@
     --pink-red: rgb(159,77,66);
     --dark-grey: rgb(76,76,76);
     --dark-pink-red: rgb(131,67,60);
+    --trans: rgb(124,123,123, 0.1);
     
     --fat-font: 'Archivo Black', sans-serif;
     --road-rage:'Road Rage', cursive;
@@ -26,11 +27,12 @@ nav ul{
     padding: 0;
     margin: 0;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     list-style: none;
     height: 5rem;
     background-color: var(--goldenrod);
     gap: 1rem;
+
 }
 
 nav li {
@@ -42,8 +44,9 @@ nav li p{
     padding: 0.5rem 0.5rem;
     border: 1px var(--pink-red) solid;
     border-radius: 3px;
-    font-family: var(--fat-font);
-    font-size: 0.5rem;
+    font-family: var(--bangers);
+    font-size: 0.8rem;
+    letter-spacing:.1rem;
 }
 
 body {
@@ -68,6 +71,8 @@ body {
 img {
     width: 100%;
     margin: 1rem;
+    margin-top: 2rem;
+    transform: translate(-0.6rem);
 }
 
 .headline {
@@ -86,6 +91,7 @@ img {
 .headline h1 {
     font-size: 2rem;
     text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
 .headline h3 {
@@ -107,17 +113,26 @@ footer {
 .btns {
     display: flex;
     justify-content: center;
+    
+}
+
+.btn {
+    border: 2px var(--dark-pink-red) solid;
+    border-radius: 3px;
 }
 
 .btn h5{
     background-color: var(--goldenrod);
-    padding: 0.8rem;
-    border-radius: 999px;
-    color: var(--smokey-black);
-    font-family: var(--fat-font);
+    padding: 0.65rem;
+    border-radius: 3px;
+    color: var(--tra);
+    font-family: var(--bangers);
+    letter-spacing: 0.1rem;
+
+    color: var(--dark-pink-red);
 }
 
-.btn h5:hover {
+.btn h5:hover, nav ul li:hover, nav ul li p:hover {
     background-color: var(--burnt-red);
     color: var(--goldenrod);
 }
