@@ -1,0 +1,91 @@
+/* colors from logo */
+:root {
+    --burnt-red: rgb(160,51,38);
+    --smokey-black: rgb(44,44,44);
+    --main-grey: rgb(124,123,123);
+    --goldenrod: rgb(221,149,19, 0.95);
+    --pink-red: rgb(159,77,66);
+    --dark-grey: rgb(76,76,76);
+    --dark-pink-red: rgb(131,67,60);
+    
+    --fat-font: 'Archivo Black', sans-serif;
+    --road-rage:'Road Rage', cursive;
+    --bangers: 'Bangers', cursive;
+    --curtive-mono: 'Cutive Mono', monospace;
+}
+
+/* CSS Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 5rem;
+    background-color: var(--goldenrod);
+    gap: 1rem;
+}
+
+nav li {
+}
+
+nav li p{
+    color: var(--dark-pink-red);
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    border: 1px var(--pink-red) solid;
+    border-radius: 3px;
+    font-family: var(--fat-font);
+    font-size: 0.5rem;
+}
+
+body {
+    background-color: var(--dark-pink-red);
+    background-image: url(./pexels-los-muertos-crew-8448169.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-blend-mode: multiply;
+}
+
+
+.hero {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    margin: 1rem;
+}
+
+.headline {
+    color: var(--goldenrod);
+    font-family: var(--bangers);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.headline h3 {
+    width: 70%;
+    font-family: var(--curtive-mono);
+    font-size: 1rem;
+}
